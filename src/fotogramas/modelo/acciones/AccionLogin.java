@@ -26,7 +26,7 @@ public class AccionLogin implements Accion {
 
 	// Aquí se deben declarar las propiedades de la acción
 	private String vista;
-	private final String vistaOK = "WEB-INF/concurso.jsp";
+	private final String vistaOK = "WEB-INF/home.jsp";
 	private final String vistaError = "gesError.jsp";
 	//private final String vistaForm= "login.jsp";
 	private BeanUsuario modelo = new BeanUsuario();

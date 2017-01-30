@@ -25,6 +25,10 @@ public abstract class FactoriaAcciones {
 	      accionF = new AccionLogin();
 	    if (accion.equals("entrar"))
 	      accionF = new AccionLogin();
+	    if (accion.equals("consultar"))
+	      accionF = new AccionLogin();
+	    if (accion.equals("concurso"))
+	      accionF = new AccionLogin();
 	    if (accion.equals("volver"))
 	      accionF = new AccionIndex();
 
