@@ -29,6 +29,7 @@ public interface Accion {
   public boolean ejecutar(HttpServletRequest request, HttpServletResponse response)
     throws ServletException, IOException;
   
+  
   /**
    * Devuelve la vista que procesará el modelo respuesta
    * @return Nombre de la vista

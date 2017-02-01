@@ -15,7 +15,7 @@ import fotogramas.modelo.beans.BeanError;
  * @author Eduardo A. Ponce
  * @version 2.0
  * 
- */
+ */ 
 public class Controlador extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	@SuppressWarnings("unused")

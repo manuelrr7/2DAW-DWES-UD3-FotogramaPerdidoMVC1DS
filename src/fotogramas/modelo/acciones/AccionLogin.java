@@ -23,7 +23,7 @@ import fotogramas.modelo.beans.*;
  */
 
 public class AccionLogin implements Accion {
-
+ 
 	// Aquí se deben declarar las propiedades de la acción
 	private String vista;
 	private final String vistaOK = "WEB-INF/home.jsp";

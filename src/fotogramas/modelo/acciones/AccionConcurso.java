@@ -23,7 +23,7 @@ import fotogramas.modelo.beans.ListadoRanking;
 
 public class AccionConcurso  implements Accion {
 
-	
+	 
 
 	// Aquí se deben declarar las propiedades de la acción
 	private String vista;

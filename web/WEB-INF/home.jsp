@@ -7,7 +7,6 @@
 <title>home</title>
 </head>
 <body>
-
 <form action="controlador" method="post">
 <input name="accion" value="consultar" type="submit">
 <input name="accion" value="concurso" type="submit">

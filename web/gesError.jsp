@@ -10,7 +10,7 @@
 </head>
 <body>
 <%
-	BeanError err = (BeanError) request.getAttribute("error");
+	BeanError err = (BeanError) request.getAttribute("error"); 
 %> 
 Se ha producido un error.<br>
 El mensaje de la excepción es: <%=err.getMensError()%> <br>

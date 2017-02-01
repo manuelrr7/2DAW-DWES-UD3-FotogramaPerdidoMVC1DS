@@ -8,7 +8,7 @@ public class BeanFotograma implements Serializable{
 	 * 
 	 */
 	private static final long serialVersionUID = 5963662929608482829L;
-
+ 
 	private String archivo;
 	private String titPelicula;	
 	private String anyoEstreno;

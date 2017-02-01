@@ -5,6 +5,7 @@ package fotogramas.modelo.beans;
 
 import java.io.*;
 
+
 /**
  * @author Eduardo A. Ponce
  *
@@ -31,7 +32,7 @@ public class BeanUsuario implements Serializable {
 	}
 	
 	/**
-	 * Constructor con parámetros
+	 * Constructor con parï¿½metros
 	 */
 	public BeanUsuario(String login, String clave, String nombre, String apellidos, String email, int edad)
 	{
@@ -127,6 +128,6 @@ public class BeanUsuario implements Serializable {
 		return encontrado;
 	}
 
-	//Métodos getter y setter
+	//Mï¿½todos getter y setter
 	
 }

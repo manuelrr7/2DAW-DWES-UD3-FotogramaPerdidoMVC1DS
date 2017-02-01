@@ -21,7 +21,7 @@ import fotogramas.modelo.beans.ListadoRanking;
 
 
 public class AccionConsultar  implements Accion {
-
+ 
 	// Aquí se deben declarar las propiedades de la acción
 	private String vista;
 	private final String vistaOK = "WEB-INF/consultar.jsp";

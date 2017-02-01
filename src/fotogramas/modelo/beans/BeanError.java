@@ -14,7 +14,7 @@ import java.io.*;
 /**
  * @author Eduardo A. Ponce
  *
- */
+ */ 
 @SuppressWarnings("serial")
 public class BeanError extends Exception implements Serializable{
 	private int codError;

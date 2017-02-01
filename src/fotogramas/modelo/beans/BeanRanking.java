@@ -10,7 +10,6 @@ public class BeanRanking implements Serializable{
 	public BeanRanking(){
 		
 	}
-
 	
 	
 	public BeanRanking(String login, String puntos) {

@@ -13,7 +13,7 @@ Aquí se produce la petición de login y clave para un usuario registrado.
  BeanError error = (BeanError) request.getAttribute("error");
  if (error!=null)
  {
-	 out.println("<br><b>"+error.getMensError()+"</b>");
+	 out.println("<br><b>"+error.getMensError()+"</b>"); 
  }
 %>
 <form action="controlador" method="post">

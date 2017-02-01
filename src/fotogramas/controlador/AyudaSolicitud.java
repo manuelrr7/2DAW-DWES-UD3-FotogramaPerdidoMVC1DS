@@ -14,7 +14,7 @@ import javax.servlet.http.*;
  * @version 2.0
  */
 public class AyudaSolicitud {
-	
+	 
 	  /**
 	   * La petición de la que se deducirá la acción a llevar a cabo
 	   */

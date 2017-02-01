@@ -13,7 +13,7 @@ import fotogramas.modelo.acciones.*;
  * procesarán las peticiones
  * @author Eduardo A. Ponce
  * @version 2.0
- */
+ */ 
 public abstract class FactoriaAcciones {
 	public static Accion creaAccion(String accion)
 	  {
