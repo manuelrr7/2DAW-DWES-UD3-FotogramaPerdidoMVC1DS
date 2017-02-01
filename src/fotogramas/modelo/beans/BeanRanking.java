@@ -11,6 +11,16 @@ public class BeanRanking implements Serializable{
 		
 	}
 
+	
+	
+	public BeanRanking(String login, String puntos) {
+		super();
+		this.login = login;
+		this.puntos = puntos;
+	}
+
+
+
 	public String getLogin() {
 		return login;
 	}

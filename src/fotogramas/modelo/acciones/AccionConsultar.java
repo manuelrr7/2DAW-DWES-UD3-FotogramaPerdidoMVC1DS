@@ -1,6 +1,7 @@
 package fotogramas.modelo.acciones;
 
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -16,6 +17,7 @@ import javax.sql.DataSource;
 import fotogramas.controlador.Accion;
 import fotogramas.modelo.beans.BeanError;
 import fotogramas.modelo.beans.BeanRanking;
+import fotogramas.modelo.beans.ListadoRanking;
 
 
 public class AccionConsultar  implements Accion {
@@ -63,19 +65,45 @@ public class AccionConsultar  implements Accion {
 		try {
 			conexion = DS.getConnection();
 			st = conexion.createStatement();
-			rs = st.executeQuery("select * from ranking");
+			ListadoRanking listaRanking = new ListadoRanking();
+			rs = st.executeQuery("select login, puntos from ranking order by puntos desc");
 			if (rs.next()) {
 				if (rs.getString("login").equals(" ")) {
 					error = new BeanError(2,"usuario nulo");
 					resultado = false;
 				}else{
 					int i=0;
-					String log, punt;
+					String log, punt,p, pun;
+					p=rs.getString("login");
+					pun=rs.getString("puntos");
+					System.out.println(p+""+pun);
+					BeanRanking beanRankin = new BeanRanking(p,pun);
+					listaRanking.add(beanRankin);
 					while (rs.next()) {
 						log=rs.getString("login");
-						punt=rs.getString("puntuacion");
-						ranking[i]=log+","+punt;
+						punt=rs.getString("puntos");
+						System.out.println(log+""+punt);
+
+						
+						BeanRanking beanRanking = new BeanRanking(log,punt);
+						listaRanking.add(beanRanking);
 					}
+					
+					PrintWriter out = response.getWriter();
+					out.write("<html>");
+					out.write("<head><title>Ranking</title></head>");
+					out.write("<body>");
+					out.write("<h4>Ranking Fotograma perdido</h4>");
+					for (int j = 0; j < listaRanking.size(); j++) {
+						out.write("<p>"+listaRanking.get(j).getLogin()+" "+listaRanking.get(j).getPuntos());
+						out.write("</p>");						
+					}
+
+					out.write("</body>");
+					out.write("</html>");		
+					
+					out.close();
+					
 				}
 			}
 			else

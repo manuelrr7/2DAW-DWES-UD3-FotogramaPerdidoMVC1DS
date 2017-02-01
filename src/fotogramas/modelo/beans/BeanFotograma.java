@@ -21,7 +21,11 @@ public class BeanFotograma implements Serializable{
 		
 	}
 
+	public BeanFotograma(String archivo, String titPelicula) {
 
+		this.archivo = archivo;
+		this.titPelicula = titPelicula;
+	}
 
 	public BeanFotograma(String archivo, String titPelicula, String anyoEstreno, String director, String genero) {
 
